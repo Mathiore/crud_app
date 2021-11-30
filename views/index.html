@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Desenvolvimento</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">Sistema do Usuário</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="crud-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">Novo Funcionário<i class="fas fa-user-tie"></i></span>
+                </a>
+            </div>
+
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Endereço</th>
+                            <th>Telefone</th>
+                            <th>Função</th>
+                            <th>Salário</th>
+                            <th>Turno</th>
+                            <th>Alterar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome Completo</td>
+                            <td>123.456.789-00</td>
+                            <td>Rua Fulano Beltrano</td>
+                            <td>(99)9888-8888</td>
+                            <td>Segurança</td>
+                            <td>R$ 5.000</td>
+                            <td>Noturno</td>
+
+                            <td>
+                                <a href="#"class="btn border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-edit"></i></span>
+                                </a>
+                                <a class="btn border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-minus-circle"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

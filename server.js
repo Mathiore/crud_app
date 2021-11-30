@@ -14,15 +14,18 @@ app.use(morgan('tiny'));
 //parse request to body-parser
 app.use(bodyparser.urlencoded({extended:true}))
 
-//set view engine
-app.set("view engine","ejs")
+//especificando a ferramenta para o front end
+app.set("view engine","ejs")      
 //app.set("views", path.resolve(__dirname,"views/ejs"))
 
 //load assets
 app.use('/css', express.static(path.resolve(__dirname,"assets/css")))
+app.use('/img', express.static(path.resolve(__dirname,"assets/img")))
+app.use('/js', express.static(path.resolve(__dirname,"assets/js")))
 
+//renderizar a tela de front-end(html com o framework ejs)
 app.get('/',(req,res)=>{
-    res.send("Crud application");
+    res.render('index')
 })
 
 app.listen(3000, ()=>{console.log(`Server is running on http://localhost:${3000}`)})
