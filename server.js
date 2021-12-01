@@ -28,4 +28,19 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+app.get('/table-funcionarios',(req,res)=>{
+    res.render('table-funcionarios');
+})
+app.get('/novo-funcionario',(req,res)=>{
+    res.render('novo-funcionario');
+})
+
+app.get('/cadastro-condominio',(req,res)=>{
+    res.render('cadastro-condominio');
+})
+
+app.get('/alterarFuncionario',(req,res)=>{
+    res.render('alterarFuncionario');
+})
+
 app.listen(3000, ()=>{console.log(`Server is running on http://localhost:${3000}`)})

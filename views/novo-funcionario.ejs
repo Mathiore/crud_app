@@ -1,0 +1,29 @@
+<!--Incluindo componente header-->
+
+<%- include('componente/header')%>
+
+<!--Incluindo componente header-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<main id="crud-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/table-funcionarios" class="border-shadow text-dark">
+                <span><i class="fas fa-angle-double-left"></i>Voltar</span>
+            </a>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Novo Funcionário</h2>
+            <span>Preencha o formulário abaixo</span>
+        </div>
+        
+        <%- include('componente/formulario')%>
+    </div>
+</main>
+
+<!--Incluindo componente Footer-->
+
+<%- include('componente/footer')%>
+
+<!--Incluindo componente Footer-->

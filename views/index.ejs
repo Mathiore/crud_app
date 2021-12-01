@@ -1,7 +1,35 @@
 <!--Incluindo componente header-->
+
 <%- include('componente/header')%>
 
 <!--Incluindo componente header-->
+
+<main id="crud-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/cadastro-condominio" class="border-shadow text-dark">
+                <span>Cadastrar Condomínio<i class="far fa-building"></i></span>
+            </a>
+        </div>
+
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CNPJ</th>
+                        <th>Endereço</th>
+                        <th>Alterar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('componente/show')%>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
 
 <!--Incluindo componente Footer-->
 
